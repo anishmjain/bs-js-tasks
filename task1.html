@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryaman Bootstrap Task 1</title>
+    <style>
+      
+.head{
+    background-color: rgb(74, 184, 224);
+    text-align: center;
+}
+h2{
+    padding-bottom: 5px;
+}
+.customcolor{
+    background-color: rgb(113, 112, 112);
+    
+}
+.cc{
+    color: white;
+    
+}
+/* Apply basic styles to the split-container */
+/* Apply basic styles to the split-container */
+.split-container {
+    display: grid;
+    grid-template-columns: 5fr 1fr; /* Left takes 6 times the width of the right */
+    height: 100vh; /* Make the container full height */
+}
+
+/* Style the left and right sections */
+.left-section, .right-section {
+    padding: 20px; /* Add some padding for spacing */
+    border: 1px solid #ccc; /* Add borders for separation */
+}
+
+.left-section {
+    background-color: rgb(222, 221, 221); /* Left section background color */
+}
+
+.right-section {
+    background-color: rgb(85, 84, 84); /* Right section background color */
+}
+p{
+    text-align: center;
+}
+.nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <h2 class="m">Ethnus layout</h2>
+    </div>
+    <nav class="py-2 customcolor border-bottom">
+        <div class="container d-flex flex-wrap">
+          <ul class="nav me-auto">
+            <li class="nav-item"><a href="#" class="nav-link  aa cc  active"  aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link aa cc ">Menu</a></li>
+            <li class="nav-item"><a href="#" class="nav-link  aa cc ">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link  aa cc ">Contact</a></li>
+          </ul>
+          <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link aa cc ">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link aa cc ">Sign up</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="split-container">
+        <div class="left-section">
+            <p>
+                Write your text here
+            </p>
+        </div>
+        <div class="right-section">
+            <p class="text-light">
+                This is
+            </p>
+        </div>
+    </div>
+</body>
+</html>
